@@ -1,0 +1,46 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+
+.container {
+	background-color: #FAFAFA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.percy-card {
+	animation: fadein 1.5s; 
+	text-align: center;
+	font-family: monospace;
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 20%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+}
+
+.percy-card h1, p {
+	font-weight: lighter;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
